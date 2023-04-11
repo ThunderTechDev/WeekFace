@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeekFace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="u0D-CJ-0LD">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zht-Xe-NZN">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZk-lf-glX" userLabel="tercioLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="261"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeekFace!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seg-xT-5QJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="261"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="122"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="systemGray2Color"/>
+                                                <size key="shadowOffset" width="3" height="3"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="68"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3Z-u7-9oU">
+                                                <rect key="frame" x="156.33333333333334" y="208.33333333333334" width="117.33333333333334" height="32.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="42"/>
+                                                <nil key="textColor"/>
+                                                <color key="highlightedColor" red="0.87420201040000001" green="0.77985998580000004" blue="0.96956521269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="seg-xT-5QJ" firstAttribute="centerX" secondItem="FZk-lf-glX" secondAttribute="centerX" id="0ac-we-vgl"/>
+                                            <constraint firstItem="i3Z-u7-9oU" firstAttribute="centerX" secondItem="FZk-lf-glX" secondAttribute="centerX" id="Pb1-qB-2fb"/>
+                                            <constraint firstItem="seg-xT-5QJ" firstAttribute="top" secondItem="FZk-lf-glX" secondAttribute="top" id="gLd-TN-XZ0"/>
+                                            <constraint firstAttribute="trailing" secondItem="seg-xT-5QJ" secondAttribute="trailing" id="irY-e3-CJD"/>
+                                            <constraint firstAttribute="bottom" secondItem="seg-xT-5QJ" secondAttribute="bottom" id="ne6-iG-zww"/>
+                                            <constraint firstAttribute="bottom" secondItem="i3Z-u7-9oU" secondAttribute="bottom" constant="20" id="nyG-g7-C7r"/>
+                                            <constraint firstItem="seg-xT-5QJ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="FZk-lf-glX" secondAttribute="leading" id="pbd-3X-0Ez"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2o-cb-dQj" userLabel="tercioImagen">
+                                        <rect key="frame" x="0.0" y="261" width="430" height="372.66666666666674"/>
+                                        <subviews>
+                                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLC-nB-Zgq" userLabel="marcoImagen" customClass="RoundedViewsConfiguration" customModule="WeekFace" customModuleProvider="target">
+                                                <rect key="frame" x="28.666666666666629" y="0.0" width="372.66666666666674" height="372.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAX-0I-ZWy" userLabel="Volume">
+                                                        <rect key="frame" x="312.66666666666663" y="312.66666666666663" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Rgz-nA-hDW"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="lrJ-im-PqL"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="speaker.wave.1" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="volumeIconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQ4-jO-ns2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="zAX-0I-ZWy" secondAttribute="trailing" id="Dq4-2o-sSx"/>
+                                                    <constraint firstAttribute="width" secondItem="OLC-nB-Zgq" secondAttribute="height" multiplier="1:1" id="FGG-rR-HEe"/>
+                                                    <constraint firstItem="zAX-0I-ZWy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OLC-nB-Zgq" secondAttribute="leading" priority="999" constant="220" id="GFv-2E-xby"/>
+                                                    <constraint firstItem="zAX-0I-ZWy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OLC-nB-Zgq" secondAttribute="top" priority="999" constant="220" id="w7e-VL-atE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zAX-0I-ZWy" secondAttribute="bottom" id="zAT-lp-1j7"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="OLC-nB-Zgq" firstAttribute="top" secondItem="w2o-cb-dQj" secondAttribute="top" id="Egg-z8-T21"/>
+                                            <constraint firstAttribute="bottom" secondItem="OLC-nB-Zgq" secondAttribute="bottom" id="KrN-6X-6jw"/>
+                                            <constraint firstItem="OLC-nB-Zgq" firstAttribute="leading" secondItem="w2o-cb-dQj" secondAttribute="leading" priority="998" constant="50" id="LM4-az-R0u"/>
+                                            <constraint firstItem="OLC-nB-Zgq" firstAttribute="centerY" secondItem="w2o-cb-dQj" secondAttribute="centerY" id="dNq-JK-PA1"/>
+                                            <constraint firstItem="OLC-nB-Zgq" firstAttribute="centerX" secondItem="w2o-cb-dQj" secondAttribute="centerX" id="uQN-UH-MyA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-ME-M5i" userLabel="tercioBotonera">
+                                        <rect key="frame" x="0.0" y="633.66666666666663" width="430" height="298.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" clipsSubviews="YES" contentMode="bottom" distribution="fillProportionally" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-o2-SZd">
+                                                <rect key="frame" x="10" y="0.0" width="410" height="298.33333333333331"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKD-RY-qUT" userLabel=" Monday iPad" customClass="RoundedButtonConfiguration" customModule="WeekFace" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32.000000000000007" width="694" height="73.666666666666686"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Monday" buttonSize="large">
+                                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="returnToMondayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JH0-Pb-JMP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rk-BR-o0F" userLabel="+ Day! iPad" customClass="RoundedButtonConfiguration" customModule="WeekFace" customModuleProvider="target">
+                                                        <rect key="frame" x="527" y="181.5" width="377" height="73.5"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="+ Day!" buttonSize="large">
+                                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="plusDayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0P-8q-DQE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ag-f6-w3z" userLabel="Monday iPhone" customClass="RoundedButtonConfiguration" customModule="WeekFace" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="128.66666666666674" width="210" height="41.333333333333343"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Monday" cornerStyle="capsule">
+                                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="returnToMondayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="snQ-KM-3Rx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-AO-eYY" userLabel="+ Day! iPhone" customClass="RoundedButtonConfiguration" customModule="WeekFace" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="128.66666666666674" width="181" height="41.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="+ Day!">
+                                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="plusDayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmc-eS-x7s"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="default">
+                                                    <mask key="subviews">
+                                                        <exclude reference="1rk-BR-o0F"/>
+                                                        <exclude reference="2ag-f6-w3z"/>
+                                                        <exclude reference="bcr-AO-eYY"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" spacing="19">
+                                                    <mask key="subviews">
+                                                        <exclude reference="nKD-RY-qUT"/>
+                                                        <include reference="2ag-f6-w3z"/>
+                                                        <include reference="bcr-AO-eYY"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="subviews">
+                                                        <include reference="1rk-BR-o0F"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Seo-o2-SZd" firstAttribute="leading" secondItem="0AM-ME-M5i" secondAttribute="leading" constant="60" id="9do-SI-g57">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="Seo-o2-SZd" secondAttribute="trailing" constant="60" id="KLL-vQ-eLO">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                            </constraint>
+                                            <constraint firstAttribute="bottom" secondItem="Seo-o2-SZd" secondAttribute="bottom" id="NhN-hr-nLB"/>
+                                            <constraint firstItem="Seo-o2-SZd" firstAttribute="top" secondItem="0AM-ME-M5i" secondAttribute="top" id="SFh-1K-bQr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FZk-lf-glX" firstAttribute="height" secondItem="zht-Xe-NZN" secondAttribute="height" multiplier="0.28" id="AuV-Ww-8NK"/>
+                                    <constraint firstItem="w2o-cb-dQj" firstAttribute="height" secondItem="zht-Xe-NZN" secondAttribute="height" multiplier="0.4" id="PED-rk-Dud"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.81176470588235294" green="0.73725490196078436" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="u0D-CJ-0LD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9yY-Jh-zVi"/>
+                            <constraint firstItem="zht-Xe-NZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GYH-Z1-JJD"/>
+                            <constraint firstAttribute="bottom" secondItem="zht-Xe-NZN" secondAttribute="bottom" id="IBW-ce-Kpw"/>
+                            <constraint firstAttribute="bottom" secondItem="u0D-CJ-0LD" secondAttribute="bottom" id="Jnq-jh-z7P"/>
+                            <constraint firstItem="u0D-CJ-0LD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LNg-Yl-NMA"/>
+                            <constraint firstItem="zht-Xe-NZN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TRJ-OJ-BUA"/>
+                            <constraint firstItem="u0D-CJ-0LD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h3P-nh-0Sm"/>
+                            <constraint firstItem="zht-Xe-NZN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uXK-ui-VVh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentDayLabel" destination="i3Z-u7-9oU" id="ssn-Eh-3rT"/>
+                        <outlet property="plusDayButton" destination="bcr-AO-eYY" id="Djh-R4-Cje"/>
+                        <outlet property="plusDayButtonIPad" destination="1rk-BR-o0F" id="rk0-7A-T3w"/>
+                        <outlet property="screenAnimationView" destination="OLC-nB-Zgq" id="c5e-HZ-DC5"/>
+                        <outlet property="volumeIcon" destination="zAX-0I-ZWy" id="9Gg-PW-hCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.34883720930233" y="2.5751072961373391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="828" height="1792"/>
+        <image name="speaker.wave.1" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
