@@ -1,6 +1,7 @@
 # Weekface
 
-![Screenshoot]( "Imagen de ejemplo")
+<img src="assets/ejemplo.png" alt="Screenshot" title="Screenshot" width="200">
+
 
 Weekface is a simple app that has allowed me to practice various aspects of iOS development. Although its functionality is limited, it has been a valuable learning resource in areas such as:
 
