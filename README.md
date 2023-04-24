@@ -1,8 +1,8 @@
 # Weekface
 
-| Capture 1 | Capture 2 |
+| Image 1 | Image 2 |
 |:--------:|:--------:|
-| <img src="assets/ejemplo1.png" alt="Screenshot 1" title="Screenshot 1" width="200"> | <img src="assets/ejemplo2.png" alt="Screenshot 2" title="Screenshot 2" width="200"> |
+| <img src="https://user-images.githubusercontent.com/105247375/234119834-d46fb514-df61-47f0-a4b7-166ff10fa73a.png" alt="Screenshot 1" title="Screenshot 1" width="200"> | <img src="assets/ejemplo2.png" alt="Screenshot 2" title="Screenshot 2" width="200"> |
 
 
 
