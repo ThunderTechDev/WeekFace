@@ -1,5 +1,7 @@
 # Weekface
 
+![Screenshoot]( "Imagen de ejemplo")
+
 Weekface is a simple app that has allowed me to practice various aspects of iOS development. Although its functionality is limited, it has been a valuable learning resource in areas such as:
 
 - **UIKit Constraints**: Despite challenges, I've managed to make the interface display well on any iOS device, although not in landscape format.
